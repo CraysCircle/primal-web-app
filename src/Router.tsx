@@ -51,6 +51,9 @@ const Terms = lazy(() => import('./pages/Terms'));
 const Privacy = lazy(() => import('./pages/Privacy'));
 const Support = lazy(() => import('./pages/Support'));
 const Csae = lazy(() => import('./pages/Csae'));
+// NOTE: The feeds screen lives in `FeedsTest.tsx`; ensure the lazy import
+// points to the correct file so case-sensitive build environments (e.g. Vercel)
+// can resolve it.
 const Feeds = lazy(() => import('./pages/FeedsTest'));
 const Feed = lazy(() => import('./pages/FeedQueryTest'));
 const AdvancedSearch = lazy(() => import('./pages/AdvancedSearch'));
